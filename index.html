@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<style>
+    section{
+        display: flex;
+    }
+    #loading{
+        display: none;
+        font-size: 30px;
+        color: black;
+    }
+</style>
+<body>
+     <section>
+    <div class="table-container">
+        <button class="btn" id="btn-data">Data</button>
+        <table class="table" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Unit Price</th>
+                    <th>Stock</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+            <p id="loading">loading...</p>
+    </div>
+    <div class="select-container">
+        <label for="price">Price Range:</label>
+        <select id="priceSelect">
+            <option value="All">All</option>
+            <option value="10">0-10</option>
+            <option value="20">0-20</option>
+            <option value="30">0-30</option>
+            <option value="40">0-40</option>
+            <option value="50">0-50</option>
+            <option value="60">0-60</option>
+            <option value="70">0-70</option>
+            <option value="80">0-80</option>
+            <option value="90">0-90</option>
+            <option value="100">0-100</option>
+            <option value="200">0-200</option>
+            <option value="300">0-300</option>
+        </select>
+        
+    </div>
+     </section>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
